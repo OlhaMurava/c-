@@ -12,6 +12,17 @@ Plane::Plane(const int number,
     volume(volume),
     passengers(passengers) {}
 
+void Plane::setNumber(int number) { this->number = number; }
+void Plane::setMass(double mass) { this->mass = mass; }
+void Plane::setVolume(double volume) { this->volume = volume; }
+void Plane::setPassengers(int passengers) { this->passengers = passengers; }
+
+// Getters
+int Plane::getNumber() const { return number; }
+double Plane::getMass() const { return mass; }
+double Plane::getVolume() const { return volume; }
+int Plane::getPassengers() const { return passengers; }
+
 void Plane::print() const {
     cout << "[< ------------------------- >]" << endl;
     cout << "Номер рейсу: ";
@@ -24,3 +35,4 @@ void Plane::print() const {
     cout << passengers << endl;
     cout << "[< ------------------------- >]" << endl;
 }
+
